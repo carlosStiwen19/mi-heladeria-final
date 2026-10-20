@@ -1,0 +1,114 @@
+<html lang="es">
+<head>
+    <title>Heladería Artesanal Frosty</title>
+</head>
+<body>
+
+    <!-- MENÚ Y BOTONES DE NAVEGACIÓN INTERACTIVOS -->
+    <nav style="background-color: #f0f0f0; padding: 12px; text-align: center;">
+        <a href="#inicio"><button onclick="alert('¡Estás en la sección de Inicio!')">🏠 Inicio</button></a>
+        <a href="#productos"><button onclick="alert('Navegando a la sección de Productos')">🍦 Productos</button></a>
+        <a href="#registro"><button onclick="alert('Navegando a Registrarse')">👤 Registrarse</button></a>
+        <a href="#nuevo-producto"><button onclick="alert('Navegando a Agregar Producto')">➕ Agregar Producto</button></a>
+        <a href="#contacto"><button onclick="alert('Navegando a Contacto')">📞 Contacto</button></a>
+    </nav>
+
+    <hr>
+
+    <!-- 1. SECCIÓN: INICIO -->
+    <div id="inicio">
+        <h1>Heladería Artesanal Frosty</h1>
+        <p>Bienvenido a nuestra heladería. Ofrecemos los helados más frescos y deliciosos hechos con fruta 100% natural.</p>
+        <img src="paleta helado de fresa.png" alt="Paleta de helado de fresa">
+    </div>
+
+    <hr>
+
+    <!-- 2. SECCIÓN: PRODUCTOS -->
+    <div id="productos">
+        <h2>Nuestros Sabores Principales</h2>
+        <ul>
+            <li>Chocolate Suizo</li>
+            <li>Fresa Natural</li>
+            <li>Vainilla Gourmet</li>
+            <li>Maracuyá Cream</li>
+        </ul>
+
+        <img src="helado bolitas fresa con cereza.png" alt="Helado de bolitas con fresa y cereza">
+
+        <h2>¿Cómo hacer tu pedido?</h2>
+        <ol>
+            <li>Elige tu sabor favorito de la lista.</li>
+            <li>Escoge si lo prefieres en cono o vaso.</li>
+            <li>Disfruta de tu helado artesanal.</li>
+        </ol>
+
+        <img src="cono helado de vainilla.png" alt="Cono de helado de vainilla">
+        <p>¡Te esperamos en nuestro local para brindarte la mejor experiencia!</p>
+    </div>
+
+    <hr>
+
+    <!-- 3. SECCIÓN: REGISTRO DE USUARIO -->
+    <div id="registro">
+        <h2>Registrarse / Crear Cuenta</h2>
+        <form onsubmit="alert('¡Registro exitoso en Heladería Frosty!'); return false;">
+            <label>Nombre Completo:</label><br>
+            <input type="text" placeholder="Ej: Carlos Rodríguez" required><br><br>
+
+            <label>Correo Electrónico:</label><br>
+            <input type="email" placeholder="correo@ejemplo.com" required><br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" required><br><br>
+
+            <button type="submit">Crear Cuenta</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 4. SECCIÓN: AGREGAR NUEVO PRODUCTO -->
+    <div id="nuevo-producto">
+        <h2>Agregar Nuevo Producto</h2>
+        <form onsubmit="alert('¡Producto agregado al catálogo correctamente!'); return false;">
+            <label>Nombre del Helado / Producto:</label><br>
+            <input type="text" placeholder="Ej: Helado de Menta con Chispas" required><br><br>
+
+            <label>Precio ($):</label><br>
+            <input type="number" placeholder="Ej: 5000" required><br><br>
+
+            <label>Categoría:</label><br>
+            <select>
+                <option>Cono</option>
+                <option>Vaso / Copa</option>
+                <option>Paleta</option>
+                <option>Litro / Familiar</option>
+            </select><br><br>
+
+            <button type="submit">Guardar Producto</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- 5. SECCIÓN: CONTACTO -->
+    <div id="contacto">
+        <h2>Contactar con la Heladería</h2>
+        <p><b>Teléfono / WhatsApp:</b> +57 300 123 4567</p>
+        <p><b>Dirección:</b> Calle Principal #12-34, Barrio El Centro</p>
+        <p><b>Horario de atención:</b> Lunes a Domingo de 10:00 AM a 8:00 PM</p>
+
+        <form onsubmit="alert('¡Mensaje enviado con éxito! Nos comunicaremos contigo pronto.'); return false;">
+            <label>Tu Nombre:</label><br>
+            <input type="text" placeholder="Escribe tu nombre" required><br><br>
+
+            <label>Tu Mensaje o Pedido Especial:</label><br>
+            <textarea rows="4" cols="40" placeholder="Escribe tu mensaje o consulta aquí..." required></textarea><br><br>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+
+</body>
+</html>
